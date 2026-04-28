@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="public/sabaIcon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umberto Saba - Poetica</title>
     <link rel="stylesheet" href="style.css">
@@ -9,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">Umberto Saba</div>
+        <a href="index.html" class="logo-link"><img src="public/sabaIcon.png" alt="Umberto Saba" class="logo-img"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,24 +25,74 @@
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <section class="content-card animate-fade-in" style="animation-delay: 0.2s;">
-            <h2>La Poetica: La scelta dell’onestà e della chiarezza</h2>
-            <img src="public/poetica_scrivania.png" alt="Scrivania del poeta" class="hero-img" style="margin-top: 0; margin-bottom: 2rem; border-color: rgba(255,255,255,0.08);">
-            <p>La concezione che Saba ha della poesia è lontanissima da quella predominante nel suo secolo. Mentre autori coevi (come D'Annunzio) puntavano su artifizi sbalorditivi e le correnti decadenti insistevano nell'impossibilità di descrivere la verità se non tramite l'oscurità dell'Ermetismo, Saba dichiara a gran voce il primato della <strong>"Poesia Onesta"</strong>.</p>
-            <p>Il grande ideale di onestà per Saba significa un'ispezione interiore genuina. Rifacendosi apertamente al modello morale e stilistico di Alessandro Manzoni, il poeta deve dire le cose in maniera piana e chiara, facendosi portavoce della realtà di tutti i giorni. Egli rifiuta l'intimismo criptico di molti intellettuali e il frammentarismo di un Ungaretti; ricerca le "trite parole che non uno osava", rivalutando perfino la vituperata ma immortale rima <em>amore/fiore</em>.</p>
-        </section>
-        
-        <section class="content-card animate-fade-in" style="animation-delay: 0.4s;">
-            <h2>Classicità e Psicoanalisi</h2>
-            <p>Per indagare il dolore e la propria persistente nevrosi, Saba diventa uno dei primi autori italiani non solo a confrontarsi con, ma a sperimentare clinicamente la giovane psicoanalisi freudiana su se stesso. Lo scavo nella propria intimità lo aiuta a rielaborare il gravoso rapporto irrisolto del trauma d'infanzia e della scissione familiare.</p>
-            <p>Nonostante l'abisso insondabile di queste fratture psicologiche, lo strumento per esprimerle verso l'esterno non si frammenta ma trova ripiego nell'antico recupero della Tradizione Lirica Italiana: ritmi consolidati e collaudati dal Petrarca al Leopardi come l'endecasillabo, il settenario, e persino la monumentale struttura semantica del Canzoniere. Il rispetto della prosodia classica serve paradossalmente a impigliare nell'ordine formale la distruzione sentimentale, facendo notare a Pier Paolo Pasolini come Saba, malgrado la veste limpida, resti il "più difficile dei poeti contemporanei".</p>
-        </section>
+        <!-- Intestazione Cinematografica -->
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2 class="animate-fade-in" style="font-size: 3.5rem; color: #fff; text-shadow: 0 4px 15px rgba(227, 176, 75, 0.4); font-family: 'Playfair Display', serif; line-height: 1.1;">La Poetica</h2>
+            <p class="animate-fade-in" style="animation-delay: 0.2s; font-size: 1.3rem; color: #e3b04b; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem;">La scelta dell'onestà e della chiarezza</p>
+            <p class="animate-fade-in" style="animation-delay: 0.3s; font-size: 1.1rem; color: #94a3b8; max-width: 680px; margin: 0 auto;">Una rivoluzione silenziosa: dire la verità in un'epoca di inganni retorici.</p>
+        </div>
+
+        <!-- Citazione illuminata d'apertura -->
+        <div class="blockquote-glow animate-fade-in" style="animation-delay: 0.4s;">
+            «Amai trite parole che non uno osava. M'incantò la rima <em>fiore / amore</em>, la più antica difficile del mondo.»
+            <span style="display: block; margin-top: 1rem; font-size: 1rem; color: #e3b04b; font-style: normal; letter-spacing: 1px;">— Umberto Saba, <em>Amai</em></span>
+        </div>
+
+        <!-- Sezione 1: La Poesia Onesta -->
+        <div class="hero-glass-pedestal animate-fade-in" style="animation-delay: 0.5s; width: 100%; padding: 3rem; margin-top: 3rem;">
+            <h3 style="font-size: 2.3rem; color: #fff; margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">✒️ La «Poesia Onesta»</h3>
+            <p style="font-size: 1.2rem; color: #e2e8f0; line-height: 1.85; margin-bottom: 1.5rem;">La concezione che Saba ha della poesia è lontanissima da quella predominante nel suo secolo. Mentre autori coevi come D'Annunzio puntavano su artifizi sbalorditivi e le correnti decadente insistevano nell'impossibilità di descrivere la verità se non tramite l'oscurità dell'Ermetismo, Saba dichiara a gran voce il primato della <strong style="color: #e3b04b;">«Poesia Onesta»</strong> prendendo come modello etico e stilistico il rigore limpido di Alessandro Manzoni.</p>
+            <p style="font-size: 1.2rem; color: #e2e8f0; line-height: 1.85; margin-bottom: 1.5rem;">Il grande ideale di onestà per Saba non significa semplicità banale, bensì un'ispezione interiore genuina e coraggiosa. Il poeta deve dire le cose in maniera piana e chiara, facendosi portavoce della realtà di tutti i giorni, della gente comune, dei marinai e dei dimenticati. Egli rifiuta sdegnosamente l'intimismo criptico di molti intellettuali e il frammentarismo di un Ungaretti; ricerca le <em>«trite parole che non uno osava»</em>, rivalutando perfino la vituperata ma immortale rima <em>amore/fiore</em>.</p>
+            <p style="font-size: 1.2rem; color: #e2e8f0; line-height: 1.85;">La poetica sabiana si avvicina, per l'ansia di sincerità e per la tendenza all'autobiografismo, ad alcune esperienze legate alla rivista <em>«La voce»</em>, ma Saba se ne staccò ben presto constatando che la sua ricerca andava in direzioni del tutto differenti e originali: non la dissoluzione dell'io, bensì la sua ricomposizione attraverso la confessione onesta.</p>
+        </div>
+
+        <!-- Griglia 3D: Pilastri della Poetica -->
+        <h3 class="animate-fade-in" style="text-align: center; font-size: 2rem; color: #e3b04b; margin: 3.5rem 0 2rem; font-family: 'Playfair Display', serif; animation-delay: 0.6s;">I pilastri della concezione poetica</h3>
+        <div class="grid-3d-layout">
+            <section class="floating-3d-card animate-fade-in" style="animation-delay: 0.7s;">
+                <div class="card-icon-3d">🔬</div>
+                <h3>Psicoanalisi e Scavo Interiore</h3>
+                <p>Saba diventa uno dei primissimi autori italiani a sperimentare clinicamente la giovane psicoanalisi freudiana su se stesso. Lo scavo nell'intimità diventa lo strumento privilegiato per rielaborare il gravoso rapporto irrisolto con il trauma d'infanzia, la scissione familiare e la nevrosi cronica. La poesia diventa così una sorta di seduta terapeutica pubblica, dove esprimere onestamente le pulsioni profonde dell'eros, le nostalgie d'infanzia, i conflitti non risolti dell'io.</p>
+            </section>
+
+            <section class="floating-3d-card animate-fade-in" style="animation-delay: 0.9s;">
+                <div class="card-icon-3d">📜</div>
+                <h3>Recupero della Tradizione Classica</h3>
+                <p>Nonostante l'abisso insondabile delle fratture psicologiche, lo strumento per esprimerle non si frammenta. Saba recupera fedelmente la Tradizione Lirica Italiana: ritmi consolidati da Petrarca a Leopardi come l'endecasillabo, il settenario, il sonetto, la struttura del Canzoniere. Riprende forme auliche e termini letterari, ma li rinnova rendendoli nuovamente vivi e comunicativi. Il rispetto della prosodia classica serve paradossalmente a impigliare nell'ordine formale la distruzione sentimentale interiore.</p>
+            </section>
+
+            <section class="floating-3d-card animate-fade-in" style="animation-delay: 1.1s;">
+                <div class="card-icon-3d">🗣️</div>
+                <h3>Chiarezza e Comunicazione</h3>
+                <p>Saba ha un'ansia profonda di comunicare con i propri lettori. Adotta perciò un linguaggio piano e colloquiale, vicino al parlato quotidiano, ma senza cedere all'ironia disincantata dei crepuscolari né al tono decadente. La sintassi è chiara e ben definita, rifiuta il frammentarismo di Ungaretti, le innovazioni radicali delle avanguardie e i versi liberi degli sperimentalisti. Non importa la bellezza dei versi in senso estetico: importa la loro radicale, impietosa verità.</p>
+            </section>
+
+            <section class="floating-3d-card animate-fade-in" style="animation-delay: 1.3s;">
+                <div class="card-icon-3d">🧩</div>
+                <h3>L'«Impasto» Aulico e Prosastico</h3>
+                <p>Il tipico impasto sabiano — di aulico e di prosaico, di antico e di nuovo — è tutt'altro che umile e facile. La semplicità delle forme e dei contenuti non esclude la profondità del discorso che scaturisce dai suoi versi. Tanto che Pier Paolo Pasolini considerava Saba «il più difficile dei poeti contemporanei», malgrado il suo linguaggio apparentemente semplice e solare. Questo paradosso è il cuore stesso del suo genio: il velo che copre l'abisso.</p>
+            </section>
+        </div>
+
+        <!-- Citazione Pasolini / Funzione Sociale -->
+        <div class="blockquote-glow animate-fade-in" style="animation-delay: 1.5s;">
+            «Onesta è quella poesia che aiuta l'uomo a recuperare la propria identità ed integrità profonda, e a partecipare alla vita sociale.»
+            <span style="display: block; margin-top: 1rem; font-size: 1rem; color: #e3b04b; font-style: normal; letter-spacing: 1px;">— Dalla poetica sabiana</span>
+        </div>
+
+        <!-- Sezione: Funzione Psicologica e Sociale della Poesia -->
+        <div class="hero-glass-pedestal animate-fade-in" style="animation-delay: 1.6s; width: 100%; padding: 3rem; margin-top: 3rem;">
+            <h3 style="font-size: 2.3rem; color: #fff; margin-bottom: 1.5rem; font-family: 'Playfair Display', serif;">⚖️ Funzione Psicologica e Sociale</h3>
+            <p style="font-size: 1.2rem; color: #e2e8f0; line-height: 1.85; margin-bottom: 1.5rem;">La poesia di Saba non si accontenta della dimensione estetica o dell'evasione sentimentale: ha una precisa <strong style="color: #e3b04b;">funzione terapeutica e civile</strong>. Deve portare il poeta, e attraverso lui il lettore, a immergersi nel flusso vitale della vita comune di tutti i giorni, e tramite questo bagno di realtà arrivare a definire ciò che è proprio di ogni uomo.</p>
+            <p style="font-size: 1.2rem; color: #e2e8f0; line-height: 1.85; margin-bottom: 1.5rem;">La poesia deve svelare la verità più profonda di ogni essere umano, ciò che è comune a tutti indistintamente. Si tratta di trovare —con l'aiuto della psicoanalisi — quelle pulsioni inconsce, quella malattia tipica del Novecento: la <em>solitudine dell'uomo che non sa più inserirsi nel ritmo della vita</em>. Per Saba, la salute è l'adesione alla realtà, anche nelle sue forme più malinconiche o amare.</p>
+            <p style="font-size: 1.2rem; color: #e2e8f0; line-height: 1.85;">Nonostante l'apparente semplicità e solarità dei suoi componimenti, l'ispirazione di Saba è carica di ambiguità e contraddizioni, essendo condizionata dallo scavo nel profondo dell'io. Egli stesso era tormentato per tutta la vita da disturbi nervosi che lo facevano sentire spesso dolorosamente «diverso» da tutti gli altri — eppure da questo tormento seppe trarre la sua forza di empatia universale.</p>
+        </div>
     </main>
 
-    <footer>
-        <p class="quote">"Amai la verità che giace al fondo, quasi un sogno obliato, che il dolore riscopre amica."</p>
+    <footer style="margin-top: 3rem;">
+        <p class="quote">«Amai la verità che giace al fondo, quasi un sogno obliato, che il dolore riscopre amica.»</p>
         <p class="copy">&copy; 2026 Umberto Saba Tribute. Realizzato per scopi didattici.</p>
     </footer>
 </body>

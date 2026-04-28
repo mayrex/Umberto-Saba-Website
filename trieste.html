@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="public/sabaIcon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umberto Saba - Trieste</title>
     <link rel="stylesheet" href="style.css">
@@ -9,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">Umberto Saba</div>
+        <a href="index.html" class="logo-link"><img src="public/sabaIcon.png" alt="Umberto Saba" class="logo-img"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -26,15 +27,30 @@
     </header>
     
     <main>
-        <section class="content-card animate-fade-in" style="animation-delay: 0.2s;">
-            <h2>Trieste: La città come specchio dell'anima</h2>
-            <img src="https://images.unsplash.com/photo-1549429402-9a3d42c38f9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Paesaggio Triestino" class="hero-img" style="margin-top: 0; margin-bottom: 2rem; border-color: rgba(255,255,255,0.08);">
-            
-            <p>Nel mosaico psicologico sabiano, la città di Trieste non svolge meramente una passiva ed insignificante funzione di pittura "da sfondo" teatrale. Al contrario, il nativo golfo asburgico vive al fianco del poeta sotto scoglio come un maestoso personaggio di spicco che respira attivamente all'unisono col battito metrico.</p>
-            <p>La città gode, nei versi, di una proverbiale ed iconica <strong>"scontrosa grazia"</strong>, che la plasma come il gemello inesplicabile del suo umore lunatico e depresso: scorbutica e severa in superficie (paragonata ad un "ragazzaccio aspro e vorace con le mani troppo grandi per regalare un fiore"), riserva scoppi viscerali di amore fraterno all'esule sofferente.</p>
-            <p>Tra le fessure intime della "Città vecchia", nelle bettole sature d'aroma fritto e nei vicoli incrociati popolati dal brulicante popolo miserabile, l'anima aristocratica ma dolente del poeta non prova nausea ma innalzamento compassionevole provando "il pensiero farsi puro". </p>
-            <p>In Trieste si rintana quel "cantuccio" insostituibile eretto oltre l'erta cittadina per osservarne il profilo alloggiando solo, unendo il fascino della misantropia all'irrefrenabile comunione con gli ultimi ed i vinti.</p>
-        </section>
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2 class="animate-fade-in" style="font-size: 3.5rem; color: #fff; text-shadow: 0 4px 15px rgba(227, 176, 75, 0.4); font-family: 'Playfair Display', serif;">La Scontrosa Grazia</h2>
+            <p class="animate-fade-in" style="animation-delay: 0.2s; font-size: 1.3rem; color: #e3b04b; letter-spacing: 2px; text-transform: uppercase;">Trieste come specchio dell'anima</p>
+        </div>
+
+        <div class="animate-fade-in" style="animation-delay: 0.3s; width: 100%; height: 380px; border-radius: 24px; overflow: hidden; margin-bottom: 3rem; box-shadow: 0 20px 40px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); position: relative;">
+            <img src="public/trieste_cityscape.png" alt="Porto di Trieste al tramonto" style="width: 100%; height: 100%; object-fit: cover;">
+            <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem; background: linear-gradient(transparent, rgba(0,0,0,0.8)); font-family: 'Playfair Display', serif; font-style: italic; color: rgba(255,255,255,0.8); font-size: 1rem;">Trieste &mdash; il porto asburgico dove Saba nacque, visse e creò la sua arte</div>
+        </div>
+
+        <div class="hero-glass-pedestal animate-fade-in" style="animation-delay: 0.5s; width: 100%; padding: 3rem;">
+            <p style="font-size: 1.25rem; color: #e2e8f0; line-height: 1.85; margin-bottom: 1.5rem;">Nel mosaico psicologico sabiano, la città di Trieste non svolge meramente una passiva ed insignificante funzione di pittura «da sfondo» teatrale. Al contrario, il nativo golfo asburgico vive al fianco del poeta come un maestoso personaggio di spicco che respira all'unisono col suo battito metrico, quasi fosse un secondo protagonista del Canzoniere. Trieste è la città di confine, crogiolo di culture diverse — italiana, slovena, austro-ungarica, ebraica — e questa molteplicità di voci e di mondi si riflette direttamente nella complessità contraddittoria della personalità del poeta.</p>
+
+            <div class="blockquote-glow animate-fade-in" style="animation-delay: 0.7s;">
+                «Trieste ha una scontrosa grazia. Se piace, è come un ragazzaccio aspro e vorace, con gli occhi azzurri e mani troppo grandi per regalare un fiore; come un amore con gelosia.»
+                <span style="display: block; margin-top: 1rem; font-size: 1rem; color: #e3b04b; font-style: normal;">— Umberto Saba, <em>Trieste</em></span>
+            </div>
+
+            <p style="font-size: 1.25rem; color: #e2e8f0; line-height: 1.85; margin-bottom: 1.5rem;">La città gode, nei versi, di una proverbiale ed iconica <strong>«scontrosa grazia»</strong>, che la plasma come il gemello inesplicabile del suo umore lunatico e depresso: scorbutica e severa in superficie, ma capace di riservare scoppi viscerali di amore fraterno all'esule sofferente. Il poeta cammina per le sue strade, sale le sue erte, guarda dal suo «cantuccio» solitario oltre i tetti verso il mare aperto, e sente che quella città scomoda e bellissima è stata «a lui fatta, alla sua vita pensosa e schiva».</p>
+
+            <p style="font-size: 1.25rem; color: #e2e8f0; line-height: 1.85; margin-bottom: 1.5rem;">Tra le fessure intime della <em>Città vecchia</em>, nelle bettole sature d'aroma fritto e nei vicoli affollati dal brulicante popolo miserabile — prostitute, marinai, vecchi che bestemmiano, soldati di cavalleria seduti al friggitore — l'anima aristocratica ma dolente del poeta non prova nausea ma un innalzamento compassionevole. In quell'umanità umile e dolente, compresa nel <em>«detrito di un gran porto di mare»</em>, il poeta riconosce la presenza del Divino: «s'agita in esse, come in me, il Signore».</p>
+
+            <p style="font-size: 1.25rem; color: #e2e8f0; line-height: 1.85;">È qui, in compagnia degli umili e degli ultimi, che il pensiero di Saba diventa paradossalmente più puro — «dove più turpe è la via». Il «cantuccio» solitario sull'erta della città è il luogo dove Saba contemporaneamente vive da recluso e si sente parte del mondo intero, unendo il fascino della misantropia all'irrefrenabile comunione con i vinti e i dimenticati. Trieste non è solo una città: è la sua anima proiettata sul mondo.</p>
+        </div>
     </main>
 
     <footer>

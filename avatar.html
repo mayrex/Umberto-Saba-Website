@@ -2,18 +2,16 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="public/sabaIcon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parla con Umberto Saba - Avatar Convai</title>
-    <meta name="description" content="Interagisci con l'avatar AI di Umberto Saba.">
+    <title>Chatta con Umberto Saba</title>
+    <meta name="description" content="Dialoga con l'IA di Umberto Saba.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- Libreria Ufficiale Convai Pixel Streaming Embed -->
-    <script src="https://unpkg.com/@convai/experience-embed/dist/core/convai-embed.umd.js"></script>
 </head>
-<body class="avatar-page">
+<body class="avatar-page chatbot-page">
     <header>
-        <div class="logo"><a href="index.html" style="color:white; text-decoration:none;">Umberto Saba</a></div>
+        <a href="index.html" class="logo-link"><img src="public/sabaIcon.png" alt="Umberto Saba" class="logo-img"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -29,43 +27,63 @@
         </nav>
     </header>
 
-    <main class="avatar-container">
-        <div class="avatar-header">
-            <h2>Dialogo Interattivo con il Poeta</h2>
-            <p>Interagisci con l'avatar di Umberto Saba (powered by Convai). Fai clic sul microfono o usa la tastiera.</p>
+    <main class="chatbot-container">
+        <!-- Layout a due colonne -->
+        <div class="chatbot-split-layout">
             
-            <div class="experience-id-form" style="margin-top: 1.5rem; background: rgba(20, 25, 40, 0.7); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); max-width: 500px; margin-left: auto; margin-right: auto;">
-                <label for="experience-id-input" style="display: block; margin-bottom: 0.8rem; font-size: 0.95rem; color: #e2e8f0; font-weight: 500;">Inserisci ID dell'Esperienza Convai (Exp ID):</label>
-                <input type="text" id="experience-id-input" placeholder="Es. abc123def456" style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid rgba(203, 155, 81, 0.3); background: rgba(0, 0, 0, 0.5); color: #fff; margin-bottom: 0.5rem; font-family: 'Inter', sans-serif; font-size: 1rem; outline: none; transition: border 0.3s ease;">
-                <p style="font-size: 0.8rem; color: #94a3b8; text-align: left; line-height: 1.4;">Dal pannello di Convai ottieni l'<strong>Experience ID</strong> e assicurati di aggiungere in Whitelist questo dominio.</p>
+            <!-- Colonna Sinistra: Profilo Poeta -->
+            <div class="chatbot-profile-card animate-fade-in">
+                <div class="profile-header">
+                    <img src="public/poetica_scrivania.png" alt="Ritratto di Umberto Saba" class="profile-avatar">
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Online</span>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h2>Umberto Saba</h2>
+                    <p class="role">Il Poeta della "Calda Vita"</p>
+                    <div class="divider"></div>
+                    <p class="bio">
+                        Interagisci con l'Intelligenza Artificiale istruita per rispondere come Umberto Saba. 
+                        Potrai fargli domande sulla sua poetica, sulla psicoanalisi, sulle sue opere come il <em>Canzoniere</em> o sul suo profondo legame con Trieste.
+                    </p>
+                </div>
             </div>
-        </div>
-        
-        <div class="convai-embed-wrapper" id="convai-wrapper">
-            <!-- Loading Fallback -->
-            <div id="convai-loading" class="convai-message">
-                <div class="spinner"></div>
-                <p>Caricamento dell'esperienza AI in corso...</p>
-            </div>
-            
-            <!-- Il widget o embed web generato andrà posizionato qua -->
-            <div id="convai-content">
-                <!-- Se l'embed consiste in un Web Component, sarà aggiunto via JS -->
-            </div>
-        </div>
 
-        <div class="avatar-controls">
-            <button id="btn-start" class="cta-button primary-cta">Avvia Conversazione</button>
-            <button id="btn-fullscreen" class="cta-button secondary-cta" style="display: none;">Schermo Intero</button>
-            <button id="btn-reset" class="cta-button secondary-cta danger-cta" style="display: none;">Resetta AI</button>
+            <!-- Colonna Destra: Interfaccia di Collegamento -->
+            <div class="chatbot-connection-panel animate-fade-in" style="animation-delay: 0.2s;">
+                <div class="connection-header">
+                    <h3>Collegamento a Convai 3D</h3>
+                    <p>Accedi al simulatore 3D interattivo di Umberto Saba.</p>
+                </div>
+
+                <div class="connection-form">
+                    
+                    <div class="helper-box">
+                        <h4>Come funziona?</h4>
+                        <ul>
+                            <li>Clicca sul pulsante qui sotto per avviare il caricamento di <strong>Convai</strong>.</li>
+                            <li>Se ti viene richiesto, effettua un rapido e gratuito login dal tuo account.</li>
+                            <li>Ricordati di dare i permessi del microfono se vuoi parlare direttamente a voce!</li>
+                        </ul>
+                    </div>
+
+                    <div class="button-group">
+                        <button id="btn-start-chat" class="cta-button primary-cta">
+                            <span class="btn-icon">🎙️</span> Avvia Avatar Convai
+                        </button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
     <footer>
-        <p class="copy">&copy; 2026 Umberto Saba Tribute. Powered by Convai.</p>
+        <p class="copy">&copy; 2026 Umberto Saba Tribute.</p>
     </footer>
 
-    <!-- Logica di configurazione e gestione della finestra avatar -->
     <script src="avatar.js"></script>
 </body>
 </html>

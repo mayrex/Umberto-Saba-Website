@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="public/sabaIcon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umberto Saba - Vita</title>
     <link rel="stylesheet" href="style.css">
@@ -9,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">Umberto Saba</div>
+        <a href="index.html" class="logo-link"><img src="public/sabaIcon.png" alt="Umberto Saba" class="logo-img"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,21 +26,68 @@
         </nav>
     </header>
     
-    <main>
-        <section class="content-card animate-fade-in" style="animation-delay: 0.2s;">
-            <h2>La Vita: Un’infanzia tra due mondi</h2>
-            <img src="public/vita_libreria.png" alt="Libreria antiquaria vintage" class="hero-img" style="margin-top: 0; margin-bottom: 2rem; border-color: rgba(255,255,255,0.08);">
-            <p>Nato a Trieste nel 1883 col nome secolare di <strong>Umberto Poli</strong>, la sua prima infanzia subisce una traumatica cesura affettiva: il padre – per motivi caratteriali inconciliabili – abbandona la madre, un'ebrea ortodossa di nome Felicita, prima ancor di poterne contemplare la nascita, creando le radici della cosiddetta "madre mesta".</p>
-            <p>Questo angosciante vuoto emotivo paterno venne però parzialmente compensato dalla rassicurante e "lieta" bontà della sua balia slovena, <strong>Peppa Sabaz</strong>, l'amorevole madre di sostituzione dalla quale in futuro erediterà, come debito d'onore, lo pseudonimo per sempre immortale: "Saba".</p>
-            <p>La sua formazione scolastica fu tutt'altro che accademica: passata sui libri da autodidatta sognatore si innamorò tenacemente di Leopardi e Petrarca. Superato il dazio del servizio militare e stretto convoglio matrimoniale con Lina (Carolina Woelfler), compagna devota di vita e ispiratrice letteraria celebre, aprì e gestì una mitica libreria antiquaria a Trieste, facendone luogo di eremitaggio intellettuale per lunghi anni.</p>
-            <p>Nonostante la stabilità lavorativa, una "nevrosi" sotterranea mai assopita lo spinse – quasi precursore in Italia – a sdraiarsi sul lettino della neonata psicoanalisi per combattere i demoni della scissione infantile materna. Nel fragore della Seconda Guerra Mondiale fu strappato a forza dal suo "cantuccio" dalle famigerate leggi razziali nazifasciste: dovette vivere nascosto ed errante tra le penombre parigine e i vicoli clandestini romani e fiorentini, salvato dall'aiuto tangibile di pochi amici coraggiosi.</p>
-            <p>Rientrato mutilato d'animo a fine conflagrazione, si spense silenziosamente e dolorosamente a Gorizia nell'estate del 1957.</p>
-        </section>
+    <main class="map-page-container">
+        <h2 class="map-page-title animate-fade-in" style="text-align:center; font-size:3rem; margin-bottom:1.5rem;">La Vita: Un viaggio tra due mondi</h2>
+        
+        <div class="interactive-map-layout animate-fade-in" style="animation-delay: 0.2s">
+            
+            <!-- Lato Sinistro: Mappa a Costellazione -->
+            <div class="map-canvas-container">
+                <div class="map-astronomy">
+                    
+                    <!-- Linee di connessione (timeline di vita) -->
+                    <svg class="map-lines" viewBox="0 0 500 500" preserveAspectRatio="none">
+                        <!-- Percorso: Trieste -> Parigi -> Roma -> Firenze -> Trieste(ritorno) -> Gorizia -->
+                        <path d="M 400,120 L 120,100 L 270,380 L 250,300 L 400,120 L 430,90" fill="none" stroke="rgba(203, 155, 81, 0.4)" stroke-width="2" stroke-dasharray="8 8" class="constellation-path" />
+                    </svg>
+
+                    <!-- Punti interattivi -->
+                    <div class="map-pin" data-city="parigi" style="top: 20%; left: 24%;">
+                        <div class="pin-dot"></div>
+                        <span class="pin-label">Parigi</span>
+                    </div>
+
+                    <div class="map-pin active-pin pulse-trieste" data-city="trieste" style="top: 24%; left: 80%;">
+                        <div class="pin-dot"></div>
+                        <span class="pin-label">Trieste</span>
+                    </div>
+
+                    <div class="map-pin" data-city="firenze" style="top: 60%; left: 50%;">
+                        <div class="pin-dot"></div>
+                        <span class="pin-label">Firenze</span>
+                    </div>
+
+                    <div class="map-pin" data-city="roma" style="top: 76%; left: 54%;">
+                        <div class="pin-dot"></div>
+                        <span class="pin-label">Roma</span>
+                    </div>
+
+                    <div class="map-pin" data-city="gorizia" style="top: 18%; left: 86%;">
+                        <div class="pin-dot"></div>
+                        <span class="pin-label">Gorizia</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Lato Destro: Pannello Informativo -->
+            <div class="map-info-panel default-state">
+                <div class="info-content-wrapper">
+                    <div class="info-icon">🧭</div>
+                    <h3 id="info-title">Esplora la Vita</h3>
+                    <p id="info-years" class="info-years"></p>
+                    <div class="divider" style="margin: 1.2rem 0;"></div>
+                    <p id="info-desc">Clicca sui nodi luminosi della mappa sulla sinistra per scoprire i capitoli della turbolenta vita di Umberto Saba, dalle origini fino alla guerra e al triste epilogo.</p>
+                </div>
+            </div>
+
+        </div>
     </main>
 
-    <footer>
+    <footer style="margin-top:2rem;">
         <p class="quote">"Amai la verità che giace al fondo, quasi un sogno obliato, che il dolore riscopre amica."</p>
         <p class="copy">&copy; 2026 Umberto Saba Tribute. Realizzato per scopi didattici.</p>
     </footer>
 </body>
+    <script src="vita.js"></script>
 </html>

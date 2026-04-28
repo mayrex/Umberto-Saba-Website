@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="public/sabaIcon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umberto Saba - Temi</title>
     <link rel="stylesheet" href="style.css">
@@ -9,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">Umberto Saba</div>
+        <a href="index.html" class="logo-link"><img src="public/sabaIcon.png" alt="Umberto Saba" class="logo-img"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -26,17 +27,36 @@
     </header>
     
     <main>
-        <section class="content-card animate-fade-in" style="animation-delay: 0.2s;">
-            <h2>I Temi Principali: Dalla Nevrosi alla "Calda Vita"</h2>
-            <img src="public/temi_malinconia.png" alt="Scorcio di stradina piovosa malinconica" class="hero-img" style="margin-top: 0; margin-bottom: 2rem; border-color: rgba(255,255,255,0.08);">
-            <p>I temi principali di Saba traggono sempre spunto dall'esperienza autobiografica o dall'osservazione minuta del panorama circostante, superando l'imput iniziale per elevarsi a messaggi di validità etica universale e perentoria.</p>
-            <ul>
-                <li><strong>Il trauma infantile e l'io frammentato:</strong> Tutta l'identità del poeta è segnata dalla lotta intestina tra le due figure materne: "la madre mesta" (quella biologica, ebrea ortodossa abbandonata dal marito) e la "madre lieta" (Peppa Sabaz, la balia cattolica espansiva ed amorevole). La loro scissione d'affetti generò nella psiche del poeta un abisso incolmabile, sfociato nei successivi disturbi nevrotici sbrogliati parzialmente in seduta psicoanalitica.</li>
-                <li><strong>La partecipazione alla "calda vita":</strong> Per Saba la salvezza interiore e la sanità mentale hanno un prerequisito: l'inserimento armonioso nella comunità pulsante degli uomini. Ama farsi attorniare dal brusio corale della folla tra marinai, ragazzini ed artigiani; le strade caotiche dei bassifondi triestini, descritte non con fare pietistico o altero ma come scrigno tangibile in cui l'umanità dimostra di custodire la virtù divina ("s'agita in esse, come in me, il Signore").</li>
-                <li><strong>Il Dolore Universale:</strong> Un sentimento atavico che accomuna i deboli è il dolore profondo. Riconosciuto da Saba come "eterno", diventa elemento primario non di disperazione pessimistica ma di fraternità empatica ("che il dolore riscopre amica"). Emblema primario è <em>La capra</em> maltrattata dalla pioggia, nel cui belato lamentoso il poeta "sentiva querelarsi ogni altro male".</li>
-                <li><strong>La simbologia Animale:</strong> Saba si distacca dai consueti allegorismi zoologici in cui si tenta di traslare bestie in sembianze umane. Nelle sue poesie (vedi <em>A mia moglie</em>), sono le donne ed i figli a racchiudere le magnifiche e devote virtù naturali possedute dagli animali (pollastra, coniglia, giovenca, ape), celebrati come anelli puri della grande catena universale più vicini all'opera di Dio.</li>
-            </ul>
-        </section>
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h2 class="animate-fade-in" style="font-size: 3rem; color: #fff; text-shadow: 0 4px 15px rgba(227, 176, 75, 0.4);">I Temi Principali</h2>
+            <p class="animate-fade-in" style="animation-delay: 0.2s; font-size: 1.2rem; color: #94a3b8; max-width: 700px; margin: 0 auto;">Dall'abisso della nevrosi alla luminosa scoperta della "Calda Vita". Tematiche biografiche che si elevano a verità morali ed universali.</p>
+        </div>
+
+        <div class="grid-3d-layout">
+            <section class="floating-3d-card animate-fade-in" style="animation-delay: 0.3s;">
+                <div class="card-icon-3d">🧠</div>
+                <h3>L'Io Frammentato</h3>
+                <p>Tutta l'identità del poeta è segnata dalla devastante lotta intestina tra le due figure materne: la madre biologica, Felicita — un'ebrea ortodossa «mesta», abbandonata dal marito prima ancora della nascita del figlio — e la balia slovena Peppa Sabaz, affettuosa, espansiva e «lieta». Questa scissione d'affetti generò nella psiche di Umberto un abisso incolmabile tra due mondi emotivi opposti ed irriconciliabili, sfociando nei disturbi nevrotici che lo accompagnarono per tutta la vita. Il conflitto tra la «madre mesta» e la «madre lieta» attraversa e informa il Canzoniere dall'inizio alla fine, riemerge in ogni emozione e in ogni paesaggio descritto. La psicoanalisi intrapresa con il dottor Weiss diventa lo strumento privilegiato per tentare faticosamente di far dialogare le due metà della sua anima.</p>
+            </section>
+
+            <section class="floating-3d-card animate-fade-in" style="animation-delay: 0.5s;">
+                <div class="card-icon-3d">☀️</div>
+                <h3>La «Calda Vita»</h3>
+                <p>Per Saba la salvezza interiore e la sanità mentale hanno un prerequisito fondamentale: l'inserimento armonioso nella comunità pulsante degli uomini comuni. Il poeta ama profondamente immergersi nel brusio corale della folla, tra marinai, ragazzini, artigiani, prostitute e soldati nei bassifondi triestini, in quella <em>«Città vecchia»</em> descritta come luogo in cui «merci ed uomini il detrito / di un gran porto di mare» convivono. Questa apparente bassezza sociale non suscita in lui ripulsa, ma un innalzamento compassionevole: in quell'umanità dolente e dimenticata Saba riconosce la scintilla del Divino, concludendo che «s'agita in esse, come in me, il Signore» e che «il pensiero si fa più puro dove più turpe è la via». È un'adesione alla vita nella sua interezza più totale.</p>
+            </section>
+
+            <section class="floating-3d-card animate-fade-in" style="animation-delay: 0.7s;">
+                <div class="card-icon-3d">🌧️</div>
+                <h3>Il Dolore Universale</h3>
+                <p>Un sentimento atavico e indifferenziato che accomuna tutti gli esseri viventi, senza distinzione di razza, di specie o di condizione. Nelle celebri poesie sabiane il dolore non è mai solo individuale, bensì fenomenologico, cosmico: è «eterno», «ha una voce e non varia». Nella poesia <em>La capra</em>, il belato lamentoso di un animale solitario e bagnato dalla pioggia rimanda direttamente — passando per il riconoscimento del «viso semita» — all'intera condizione umana, all'ebraismo perseguitato, alla vita come dolore condiviso. Saba risponde alla capra «prima per celia, poi perché il dolore è eterno». Questo riconoscimento non genera però pessimismo leopardiano o chiusura malmostosa: al contrario, diventa la radice più autentica della fratellanza empatica e dell'apertura verso gli altri.</p>
+            </section>
+
+            <section class="floating-3d-card animate-fade-in" style="animation-delay: 0.9s;">
+                <div class="card-icon-3d">🕊️</div>
+                <h3>La Simbologia Animale</h3>
+                <p>Saba si distacca nettamente dai consueti allegorismi zoologici in cui si tenta di traslare bestie umane in sembianze animali per fini moralistici. Nelle sue liriche il meccanismo è esattamente invertito: nella celebre <em>A mia moglie</em>, è la moglie Lina a racchiudere in sé le pure e devote virtù naturali degli animali, paragonata con delicata meraviglia a una giovane pollastra, una giovenca gravida, una cagna fedele, una pavida coniglia, una rondine, una provvida formica e un'ape. Questo sguardo — che Saba stesso dice scritto «come altri reciterebbe una preghiera» — ribalta la gerarchia tradizionale: gli animali non imitano l'uomo, ma custodiscono ciò che nell'uomo si è perduto, la loro vicinanza a Dio. Per Saba sono gli animali, in tutta la loro innocenza, ad «avvicinarsi al Signore».</p>
+            </section>
+        </div>
     </main>
 
     <footer>
