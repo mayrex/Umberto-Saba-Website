@@ -28,6 +28,15 @@ body {
   background-attachment: fixed;
 }
 
+/* Sfondo specifico per la homepage */
+body.home-body {
+  background-image: linear-gradient(rgba(11, 15, 25, 0.7), rgba(11, 15, 25, 0.95)), url('public/Immagine%20sfondo.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
   color: var(--accent);
@@ -102,10 +111,8 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(rgba(11, 15, 25, 0.4), rgba(11, 15, 25, 0.9)), url('public/immagine%20sfondo.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  /* L'immagine ora è sul body, qui teniamo solo un leggero strato trasparente se necessario, o lo omettiamo */
+  background: transparent;
 }
 
 .hero-fullscreen .hero-content {
