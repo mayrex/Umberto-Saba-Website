@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parla con Umberto Saba - Avatar Convai</title>
+    <meta name="description" content="Interagisci con l'avatar AI di Umberto Saba.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Libreria Ufficiale Convai Pixel Streaming Embed -->
+    <script src="https://unpkg.com/@convai/experience-embed/dist/core/convai-embed.umd.js"></script>
+</head>
+<body class="avatar-page">
+    <header>
+        <div class="logo"><a href="index.html" style="color:white; text-decoration:none;">Umberto Saba</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vita.html">Vita</a></li>
+                <li><a href="opere.html">Opere</a></li>
+                <li><a href="poetica.html">Poetica</a></li>
+                <li><a href="temi.html">Temi</a></li>
+                <li><a href="trieste.html">Trieste</a></li>
+                <li><a href="poesie.html">Poesie</a></li>
+                <li><a href="importanza.html">Importanza</a></li>
+                <li><a href="avatar.html" class="active avatar-link nav-highlight">Parla con il Poeta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="avatar-container">
+        <div class="avatar-header">
+            <h2>Dialogo Interattivo con il Poeta</h2>
+            <p>Interagisci con l'avatar di Umberto Saba (powered by Convai). Fai clic sul microfono o usa la tastiera.</p>
+            
+            <div class="experience-id-form" style="margin-top: 1.5rem; background: rgba(20, 25, 40, 0.7); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); max-width: 500px; margin-left: auto; margin-right: auto;">
+                <label for="experience-id-input" style="display: block; margin-bottom: 0.8rem; font-size: 0.95rem; color: #e2e8f0; font-weight: 500;">Inserisci ID dell'Esperienza Convai (Exp ID):</label>
+                <input type="text" id="experience-id-input" placeholder="Es. abc123def456" style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid rgba(203, 155, 81, 0.3); background: rgba(0, 0, 0, 0.5); color: #fff; margin-bottom: 0.5rem; font-family: 'Inter', sans-serif; font-size: 1rem; outline: none; transition: border 0.3s ease;">
+                <p style="font-size: 0.8rem; color: #94a3b8; text-align: left; line-height: 1.4;">Dal pannello di Convai ottieni l'<strong>Experience ID</strong> e assicurati di aggiungere in Whitelist questo dominio.</p>
+            </div>
+        </div>
+        
+        <div class="convai-embed-wrapper" id="convai-wrapper">
+            <!-- Loading Fallback -->
+            <div id="convai-loading" class="convai-message">
+                <div class="spinner"></div>
+                <p>Caricamento dell'esperienza AI in corso...</p>
+            </div>
+            
+            <!-- Il widget o embed web generato andrà posizionato qua -->
+            <div id="convai-content">
+                <!-- Se l'embed consiste in un Web Component, sarà aggiunto via JS -->
+            </div>
+        </div>
+
+        <div class="avatar-controls">
+            <button id="btn-start" class="cta-button primary-cta">Avvia Conversazione</button>
+            <button id="btn-fullscreen" class="cta-button secondary-cta" style="display: none;">Schermo Intero</button>
+            <button id="btn-reset" class="cta-button secondary-cta danger-cta" style="display: none;">Resetta AI</button>
+        </div>
+    </main>
+
+    <footer>
+        <p class="copy">&copy; 2026 Umberto Saba Tribute. Powered by Convai.</p>
+    </footer>
+
+    <!-- Logica di configurazione e gestione della finestra avatar -->
+    <script src="avatar.js"></script>
+</body>
+</html>
